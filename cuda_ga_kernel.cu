@@ -4,6 +4,12 @@
 
 extern "C"{
 
+    __global__ void initRand(curandState* states, unsigned long seed, int P) {
+        int i = blockIdx.x * blockDim.x + threadIdx.x;
+        if (i < P)
+            curand_init(seed, i, 0, &states[i]);
+    }
+
     __global__ void fitnessfunc(float* pop, float* fit, float* ax, float* ay, float* rssi, int P, int m) {
         int i = blockIdx.x * blockDim.x + threadIdx.x;
         if (i < P) {
@@ -74,3 +80,4 @@ extern "C"{
         }
     }
 }
+
