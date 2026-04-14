@@ -98,8 +98,6 @@ Results below were collected on an **NVIDIA GeForce RTX 3090** and an **Intel Co
 
 **Transfer overhead: 0.5% of GPU total**
 
-**Solution quality:** GPU and CPU best fitness both converge to 0.000000 (exact solution found).
-
 ---
 
 ### Table III — Scalability Sweep
