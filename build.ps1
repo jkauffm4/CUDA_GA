@@ -1,7 +1,7 @@
 # Build script for CUDA Genetic Algorithm
 # Run from the directory containing your source files
 
-$OutputName = "cuda_test"
+$OutputName = "cuda_rssi_ga"
 
 Write-Host "Building $OutputName..." -ForegroundColor Cyan
 
