@@ -91,6 +91,8 @@ Results below were collected on an **NVIDIA GeForce RTX 3090** and an **Intel Co
 | `crossoverKernel` (all generations) | 63.327 | 35.460 | 32.9% |
 | `mutationKernel` (all generations) | 34.126 | 14.735 | 17.7% |
 | **Kernel subtotal** | **124.318** | **60.063** | **64.6%** |
+| CUDA Alloc/Free | 67.23 | N/A | 34.9% |
+| **Memory subtotal** | **67.23** | **N/A** | **34.9%** |
 | H→D Transfer (target vector) | 0.165 | 0.252 | 0.1% |
 | D→H Transfer (population + fitness) | 0.805 | 0.309 | 0.4% |
 | **Transfer subtotal** | **0.970** | **0.329** | **0.5%** |
